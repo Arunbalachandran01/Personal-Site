@@ -1,0 +1,179 @@
+
+
+
+
+
+.name-text{
+    color: orange;
+}
+
+.myExperience{
+    margin: 5%;
+}
+
+.mySkills{
+    margin-bottom: 5%;
+}
+
+.progress-bar-container:not(:last-child) {
+    margin-bottom: 3%;
+}
+
+.exp{
+    margin-bottom: 5%;
+}
+
+/* Styling the h2 tag by giving color, 
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    border: 1px solid #212529;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(33, 37, 0);
+}
+
+/* Stylingthe background color of each 
+animation and border radius */
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: #212529;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.c {
+    width: 85%;
+}
+
+.java {
+    width: 80%;
+}
+
+.python {
+    width: 65%;
+}
+
+.html {
+    width: 75%;
+}
+
+.css {
+    width: 65%;
+}
+
+.javascript {
+    width: 55%;
+}
+
+/* Timeline Container */
+
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid #212529;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #212529;
+    color: gray;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: orange;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .year {
+    color: orange;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -37px;
+    border: 3px solid orange;
+  }
+  
+  .highlight-container, .highlight {
+    position: relative;
+  }
+  
+  .highlight-container {
+    display: inline-block;
+  }
+  .highlight-container:before {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: orange;
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
+  }
+
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+
+.myPhoto{
+    border-radius: 50%;
+}
+
+/* Animating the progress bar by 
+initially starting from 0*/
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
